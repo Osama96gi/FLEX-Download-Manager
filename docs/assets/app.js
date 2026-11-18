@@ -270,10 +270,14 @@
 
     const navGh = document.getElementById("navGithubBtn");
     const setupLink = document.getElementById("setupDownloadLink");
+    const heroLink = document.getElementById("heroDownloadBtn");
     const allReleases = document.getElementById("allReleasesLink");
     if (navGh) navGh.href = repoUrl;
     if (allReleases) allReleases.href = releasesUrl;
     if (setupLink) setupLink.href = latestDownload;
+    // The hero button starts the download immediately instead of scrolling to
+    // the download section, so it always points at the current installer.
+    if (heroLink) heroLink.href = latestDownload;
 
     try {
       const resp = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
@@ -283,8 +287,9 @@
       const data = await resp.json();
       const assets = Array.isArray(data.assets) ? data.assets : [];
       const exeAsset = assets.find((a) => /\.exe$/i.test(a.name || ""));
-      if (exeAsset && exeAsset.browser_download_url && setupLink) {
-        setupLink.href = exeAsset.browser_download_url;
+      if (exeAsset && exeAsset.browser_download_url) {
+        if (setupLink) setupLink.href = exeAsset.browser_download_url;
+        if (heroLink) heroLink.href = exeAsset.browser_download_url;
         if (exeAsset.size > 0) {
           const sizeEl = document.getElementById("releaseSize");
           if (sizeEl) sizeEl.textContent = `${(exeAsset.size / (1024 * 1024)).toFixed(1)} MB`;
