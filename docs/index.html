@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLEX Download Manager 1.2.5 — Fast Segmented Download Manager</title>
+  <meta name="description" content="FLEX Download Manager 1.2.5 is a free, open-source segmented download manager for Windows x64 with YouTube & playlist downloading, Chrome integration, Site Grabber, and Scheduler." />
+  <meta property="og:title" content="FLEX Download Manager 1.2.5" />
+  <meta property="og:description" content="Free, open-source segmented download manager for Windows x64 with YouTube & full playlist support, Chrome integration, Site Grabber, and Scheduler." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://FLEXDownloadManager.com/" />
+  <meta property="og:image" content="https://FLEXDownloadManager.com/screenshots/flexdm-main.png" />
+  <link rel="canonical" href="https://FLEXDownloadManager.com/" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.svg" alt="FLEX Download Manager Logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="brand-name">FLEX Download Manager</span>
+          <span class="brand-version">v1.2.5</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#features" data-i18n="navFeatures">الميزات</a>
+        <a href="#screenshots" data-i18n="navScreenshots">لقطات الشاشة</a>
+        <a href="#extension" data-i18n="navExtension">إضافة المتصفح</a>
+        <a href="#changelog" data-i18n="navChangelog">الجديد في 1.2.5</a>
+        <a href="#download" data-i18n="navDownload">التحميل</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="langToggle" class="btn btn-ghost btn-sm" type="button" aria-label="Switch language">
+          EN
+        </button>
+        <a id="navGithubBtn" class="btn btn-outline btn-sm" href="https://github.com/Osama96gi/FLEX-Download-Manager" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a class="btn btn-primary btn-sm" href="#download" data-i18n="navDownloadBtn">تنزيل 1.2.5</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">
+            <span class="pill-dot"></span>
+            <span data-i18n="heroBadge">الإصدار 1.2.5 · مفتوح المصدر · Windows 10/11 x64</span>
+          </div>
+          <h1 data-i18n="heroTitle">مدير تنزيل مجزّأ سريع وذكي لنظام ويندوز</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            FLEX Download Manager يسرّع تنزيلاتك بتقسيم الملفات إلى اتصالات متوازية، مع استئناف آمن حتى بعد إعادة تشغيل الجهاز، ودعم كامل لتنزيل فيديوهات وقوائم تشغيل يوتيوب حتى 4K، وساحب المواقع، والجدولة التلقائية.
+          </p>
+
+          <div class="hero-cta">
+            <a id="heroDownloadBtn" class="btn btn-primary btn-lg" href="#download">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span data-i18n="heroDownloadCta">تحميل FLEX Download Manager 1.2.5</span>
+            </a>
+            <a class="btn btn-outline btn-lg" href="#features" data-i18n="heroExploreCta">استكشف الميزات</a>
+          </div>
+
+          <div class="hero-meta">
+            <span data-i18n="heroMetaFree">مجاني 100% ومفتوح المصدر</span>
+            <span class="sep">•</span>
+            <span data-i18n="heroMetaTech">C++17 · Qt 6 · WinHTTP</span>
+            <span class="sep">•</span>
+            <span data-i18n="heroMetaLang">واجهة عربية وإنجليزية</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="window-frame">
+            <div class="window-chrome">
+              <div class="window-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="window-title" id="heroFrameTitle">FLEX Download Manager 1.2.5</span>
+              <div class="hero-tabs" role="tablist">
+                <button class="hero-tab active" type="button" data-shot="screenshots/flexdm-main.png" data-caption-ar="الواجهة الرئيسية وجدول التنزيلات" data-caption-en="Main Window & Download Queue" data-i18n="tabMain">الجدول</button>
+                <button class="hero-tab" type="button" data-shot="screenshots/1.PNG" data-caption-ar="شاشة البدء وشريط الأدوات" data-caption-en="Clean Start & Toolbar" data-i18n="tabStart">الواجهة</button>
+                <button class="hero-tab" type="button" data-shot="screenshots/2.PNG" data-caption-ar="نافذة الجدولة التلقائية" data-caption-en="Built-in Scheduler" data-i18n="tabScheduler">الجدولة</button>
+              </div>
+            </div>
+            <button class="shot-zoom-trigger" id="heroImageBtn" type="button" aria-label="Zoom screenshot">
+              <img id="heroPreviewImg" src="screenshots/flexdm-main.png" alt="FLEX Download Manager Main Window" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights strip -->
+    <section class="highlights">
+      <div class="container highlights-grid">
+        <div class="stat-item">
+          <div class="stat-value">32x</div>
+          <div class="stat-label" data-i18n="statConn">اتصالات متوازية قابلة للتخصيص</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">4K / M4A</div>
+          <div class="stat-label" data-i18n="statYt">دعم فيديوهات وقوائم تشغيل يوتيوب</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">100%</div>
+          <div class="stat-label" data-i18n="statPersist">حفظ تلقائي للجدول بعد إعادة التشغيل</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">AR / EN</div>
+          <div class="stat-label" data-i18n="statRtl">دعم فوري للعربية RTL والإنجليزية</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="featuresTag">الميزات الأساسية</span>
+          <h2 data-i18n="featuresTitle">كل ما تحتاجه لتسريع وإدارة تنزيلاتك</h2>
+          <p data-i18n="featuresDesc">مصمم من الصفر بلغة C++17 وQt 6 ليكون خفيفاً، سريع الاستجابة، ومتكاملاً مع متصفحك.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon accent-green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 data-i18n="feat1Title">محرك تنزيل مجزّأ فائق السرعة</h3>
+            <p data-i18n="feat1Desc">يفحص دعم الخادم لنطاقات البايت (Byte-Range) ويقسّم الملف إلى عدة أجزاء متوازية، مع تراجع سلس عند عدم دعم الاستئناف وإعادة المحاولة التلقائية.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon accent-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            </div>
+            <h3 data-i18n="feat2Title">حفظ دائم واستئناف آمن</h3>
+            <p data-i18n="feat2Desc">يحفظ جدول التنزيلات وحالة الأجزاء بشكل ذري ودوري على القرص، مع معالجة إغلاق ويندوز لحفظ التنزيلات المتوقفة واستكمالها فور إعادة التشغيل.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon accent-red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><polygon points="10 8.5 16 11.5 10 14.5 10 8.5"/></svg>
+            </div>
+            <h3 data-i18n="feat3Title">فيديوهات وقوائم تشغيل يوتيوب</h3>
+            <p data-i18n="feat3Desc">زر «Download this video» و«Download this playlist» يظهران مباشرة في يوتيوب، مع نافذة متكاملة لاختيار المقاطع والجودة (حتى 4K أو M4A) ومجلد الحفظ والترقيم التلقائي.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon accent-cyan">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+            </div>
+            <h3 data-i18n="feat4Title">تكامل سلس مع المتصفحات</h3>
+            <p data-i18n="feat4Desc">يلتقط تنزيلات Chrome وBrave وEdge دون تعارض أو ظهور نوافذ حفظ مزدوجة، مع «مثبت الإضافة» المدمج داخل قائمة المساعدة لتسهيل التثبيت في أي وقت.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon accent-amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 data-i18n="feat5Title">ساحب المواقع (Site Grabber)</h3>
+            <p data-i18n="feat5Desc">افحص أي صفحة ويب لاكتشاف الأرشيفات أو المستندات أو الفيديو أو الصوت أو امتدادات مخصصة، وحدد الملفات المطلوبة لتنزيلها دفعة واحدة.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon accent-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 data-i18n="feat6Title">مجدول وطابور تنزيلات ذكي</h3>
+            <p data-i18n="feat6Desc">حدّد نافذة زمنية للبدء والإيقاف التلقائي، وعدد الملفات المتزامنة، وعدد المحاولات، والإجراء بعد الانتهاء (الخروج أو إيقاف تشغيل الكمبيوتر).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section id="screenshots" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="shotsTag">لقطات من البرنامج</span>
+          <h2 data-i18n="shotsTitle">واجهة داكنة مألوفة ومصممة للإنتاجية</h2>
+          <p data-i18n="shotsDesc">اضغط على أي لقطة شاشة لتكبيرها واستعراض تفاصيل الواجهة.</p>
+        </div>
+
+        <div class="shots-grid">
+          <figure class="shot-card">
+            <button class="shot-btn" type="button" data-lightbox="screenshots/flexdm-main.png" data-caption-key="shot1Caption">
+              <img src="screenshots/flexdm-main.png" alt="FLEX Download Manager Main Window with downloads" loading="lazy" />
+            </button>
+            <figcaption data-i18n="shot1Caption">جدول التنزيلات الرئيسي مع التصنيفات وشريط الأدوات الكامل</figcaption>
+          </figure>
+
+          <figure class="shot-card">
+            <button class="shot-btn" type="button" data-lightbox="screenshots/1.PNG" data-caption-key="shot2Caption">
+              <img src="screenshots/1.PNG" alt="FLEX Download Manager Toolbar and Categories" loading="lazy" />
+            </button>
+            <figcaption data-i18n="shot2Caption">شريط الأدوات الجديد متضمناً أداة Download Playlist وساحب المواقع</figcaption>
+          </figure>
+
+          <figure class="shot-card">
+            <button class="shot-btn" type="button" data-lightbox="screenshots/2.PNG" data-caption-key="shot3Caption">
+              <img src="screenshots/2.PNG" alt="FLEX Download Manager Scheduler Dialog" loading="lazy" />
+            </button>
+            <figcaption data-i18n="shot3Caption">نافذة الجدولة لضبط أوقات البدء والإيقاف والتنزيلات المتزامنة</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browser Extension -->
+    <section id="extension" class="section">
+      <div class="container">
+        <div class="ext-box">
+          <div class="ext-copy">
+            <span class="section-tag" data-i18n="extTag">إضافة المتصفح</span>
+            <h2 data-i18n="extTitle">تكامل مباشر مع Chrome وBrave وEdge</h2>
+            <p data-i18n="extDesc">
+              لأن الإضافة مدمجة محلياً مع حزمة التثبيت دون متجر، يمكنك إضافتها في 4 خطوات بسيطة — أو فتح «مثبت الإضافة» مباشرة من قائمة Help داخل البرنامج:
+            </p>
+            <ol class="steps-list">
+              <li data-i18n="extStep1">افتح <code>chrome://extensions</code> أو <code>brave://extensions</code> أو <code>edge://extensions</code></li>
+              <li data-i18n="extStep2">فعّل خيار <strong>وضع المطوّر (Developer mode)</strong></li>
+              <li data-i18n="extStep3">اضغط <strong>Load unpacked</strong> واختر مجلد <code>browser-extension</code> داخل مجلد البرنامج</li>
+              <li data-i18n="extStep4">تأكد من تفعيل <strong>FLEX Download Manager</strong> لالتقاط التنزيلات وظهور أزرار يوتيوب</li>
+            </ol>
+          </div>
+          <div class="ext-highlights">
+            <div class="mini-feature">
+              <strong data-i18n="extFeat1Title">Download this video</strong>
+              <span data-i18n="extFeat1Desc">قائمة جودات فورية أعلى أي فيديو على يوتيوب ومواقع التواصل.</span>
+            </div>
+            <div class="mini-feature">
+              <strong data-i18n="extFeat2Title">Download this playlist</strong>
+              <span data-i18n="extFeat2Desc">شريط أعلى قوائم تشغيل يوتيوب لتحميل القائمة كاملة بالجودة التي تختارها.</span>
+            </div>
+            <div class="mini-feature">
+              <strong data-i18n="extFeat3Title">آمن تماماً على تنزيلاتك</strong>
+              <span data-i18n="extFeat3Desc">إذا كان التطبيق مغلقاً، يترك المتصفح التحميل يعمل بشكل طبيعي دون فقدانه.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Changelog 1.2.5 -->
+    <section id="changelog" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag" data-i18n="chgTag">سجل التغييرات</span>
+          <h2 data-i18n="chgTitle">ما الجديد في الإصدار 1.2.5</h2>
+          <p data-i18n="chgDesc">تحديث رئيسي يركّز على استقرار الحفظ، قوائم تشغيل يوتيوب، وتسهيل إعداد المتصفح.</p>
+        </div>
+
+        <div class="changelog-list">
+          <div class="changelog-item">
+            <span class="badge badge-fix" data-i18n="badgeFix">إصلاح مهم</span>
+            <div>
+              <h3 data-i18n="chg1Title">حفظ واستعادة جدول التحميلات بعد إعادة تشغيل الجهاز</h3>
+              <p data-i18n="chg1Desc">حفظ القائمة تلقائياً وبشكل ذري في ملف downloads.json، وحفظ ملفات .state دورياً كل ثانيتين، وعدم حذف الملفات المؤقتة عند الإغلاق أو إعادة التشغيل، مع استعادة التحميلات النشطة في حالة «متوقف مؤقتاً» لاستكمالها بأمان.</p>
+            </div>
+          </div>
+
+          <div class="changelog-item">
+            <span class="badge badge-feat" data-i18n="badgeNew">ميزة جديدة</span>
+            <div>
+              <h3 data-i18n="chg2Title">تحميل قوائم تشغيل يوتيوب كاملة (Download this playlist)</h3>
+              <p data-i18n="chg2Desc">إظهار شريط «Download this playlist» أعلى قوائم التشغيل في يوتيوب مع اختيار الجودة، وإضافة أداة «Download Playlist» إلى شريط الأدوات للّصق المباشر، ونافذة لاختيار المقاطع والجودة ومجلد الحفظ والترقيم التلقائي، مع تنبيه سريع عائم عند الإضافة.</p>
+            </div>
+          </div>
+
+          <div class="changelog-item">
+            <span class="badge badge-feat" data-i18n="badgeNew2">ميزة جديدة</span>
+            <div>
+              <h3 data-i18n="chg3Title">مثبت الإضافة (Extension Installer) في قائمة المساعدة</h3>
+              <p data-i18n="chg3Desc">نافذة مخصصة ضمن قائمة Help لمساعدة المستخدم على تثبيت إضافة المتصفح في Chrome أو Brave أو Edge في حال تخطّاها أثناء التثبيت، مع نسخ المسار وفتح صفحة الإضافات بنقرة واحدة.</p>
+            </div>
+          </div>
+
+          <div class="changelog-item">
+            <span class="badge badge-imp" data-i18n="badgeImp">تحسين</span>
+            <div>
+              <h3 data-i18n="chg4Title">تشغيل تلقائي افتراضي مع بدء ويندوز</h3>
+              <p data-i18n="chg4Desc">تفعيل خيار التشغيل مع بداية تشغيل ويندوز افتراضياً عند التثبيت ليبقى التكامل مع المتصفح جاهزاً في صينية النظام دائماً، مع إمكانية تعطيله من الإعدادات في أي وقت.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+      <div class="container">
+        <div class="download-box">
+          <div class="download-info">
+            <span class="section-tag" data-i18n="dlTag">التحميل الرسمي</span>
+            <h2 data-i18n="dlTitle">FLEX Download Manager 1.2.5 لنظام ويندوز</h2>
+            <p data-i18n="dlDesc">مثبّت مستقل لا يتطلب صلاحيات مسؤول، يشمل التطبيق وyt-dlp ومكتبات Qt 6 وإضافة المتصفح.</p>
+
+            <div class="dl-actions">
+              <a id="setupDownloadLink" class="btn btn-primary btn-lg" href="https://github.com/Osama96gi/FLEX-Download-Manager/releases/latest/download/FLEX.Download.Manager.1.2.5.Setup.exe" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span id="setupDownloadText" data-i18n="dlBtn">تحميل FLEX Download Manager 1.2.5 Setup.exe</span>
+              </a>
+              <a id="allReleasesLink" class="btn btn-outline btn-lg" href="https://github.com/Osama96gi/FLEX-Download-Manager/releases" target="_blank" rel="noopener noreferrer" data-i18n="dlReleasesBtn">كل الإصدارات على GitHub</a>
+            </div>
+          </div>
+
+          <div class="dl-specs">
+            <div class="spec-row">
+              <span class="spec-k" data-i18n="specVerK">الإصدار</span>
+              <span class="spec-v" id="releaseVersion">1.2.5</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k" data-i18n="specOsK">النظام</span>
+              <span class="spec-v">Windows 10 / 11 (x64)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k" data-i18n="specSizeK">الحجم</span>
+              <span class="spec-v" id="releaseSize">64.3 MB</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-k" data-i18n="specRightsK">الصلاحيات</span>
+              <span class="spec-v" data-i18n="specRightsV">تثبيت للمستخدم الحالي (بدون UAC)</span>
+            </div>
+            <div class="spec-hash">
+              <div class="hash-head">
+                <span>SHA-256</span>
+                <button id="copyHashBtn" class="btn btn-ghost btn-xs" type="button" data-i18n="copyBtn">نسخ</button>
+              </div>
+              <code id="sha256Code">F5B49197E6ECD28ABD86AB5D27EAAC342209013E6FCBCC3C207C8A2A3E81616F</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="FLEX Logo" width="24" height="24" />
+        <span>FLEX Download Manager · ProSoft © 2026</span>
+      </div>
+      <p class="footer-note" data-i18n="footerNote">
+        مشروع حر ومفتوح المصدر مبني باستخدام C++17 وQt 6 Widgets وWinHTTP. جميع الحقوق محفوظة.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Screenshot preview">
+    <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
